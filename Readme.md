@@ -1,2 +1,2 @@
-Petar's Internship Learning Playground idk what🚀
+This line was added on master branch.
 
