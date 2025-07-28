@@ -1,18 +1,16 @@
-# Exercise 1: Odd or Even
-number = int(input("Enter a number: "))
-if number % 2 == 0:
-    print("Even!")
+number = int(input("Enter an odd or even number: "))
+if number % 2 == 0: 
+    print("The number is even")
 else:
-    print("Odd!")
+    print("The number is odd")
 
-# Exercise 2: Name Repeater
-name = input("What’s your name? ")
-for i in range(3):
-    print("Hello", name)
 
-# Exercise 3: Simple Calculator
-x = int(input("First number: "))
-y = int(input("Second number: "))
+name = input("Enter you're name: ")
+for i in range(5):
+    print("Hello " + name)
+
+x = int(input("Enter first number: "))
+y = int(input("Enter second number: "))
 op = input("Choose (+, -, *, /): ")
 
 if op == "+":
@@ -23,16 +21,15 @@ elif op == "*":
     print(x * y)
 elif op == "/":
     print(x / y)
-else:
-    print("Invalid operator.")
 
-# Exercise 4: Guess the Number
+
 import random
+num = random.randint(1, 10)
+guess = int(input("Guess random number 1 to 10: "))
 
-secret = random.randint(1, 10)
-guess = int(input("Guess a number between 1 and 10: "))
+if guess == num:
+    print("correct")
+else: 
+    print("wrong")
 
-if guess == secret:
-    print("Correct!")
-else:
-    print("Nope, the number was", secret)
+
